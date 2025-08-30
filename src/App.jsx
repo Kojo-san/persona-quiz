@@ -87,7 +87,7 @@ useEffect(
   [currentQuestionIndex]
 );
   return (
-   <UserProvider value={{ name: userName, setName: setUserName }}>
+   <UserProvider>
       <Router>
         <Header />
         <Routes>
