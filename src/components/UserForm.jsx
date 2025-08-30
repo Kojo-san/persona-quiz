@@ -13,7 +13,17 @@ export default function UserForm () {
         window.dispatchEvent(navEvent); 
     }
 
-    return (
-        //TO DO: Add form here 
+    return ( 
+        <form onSubmit={handleSubmit}>
+            <label>
+                Enter your name:
+                <input
+                    type="text" 
+                    value={inputName}
+                    onChange={(e) => setInputName.apply(e.target.value)} 
+                    required />
+            </label>
+            <button type="submit">Start Quiz</button>
+        </form>
     );
 }
