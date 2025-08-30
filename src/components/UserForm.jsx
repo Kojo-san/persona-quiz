@@ -9,5 +9,11 @@ export default function UserForm () {
         e.preventDefault();
         setName(inputName);
         window.history.pushState({}, '', '/quiz');
+        const navEvent = new PopStateEvent('popState');
+        window.dispatchEvent(navEvent); 
     }
+
+    return (
+        //TO DO: Add form here 
+    );
 }
