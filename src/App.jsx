@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { UserProvider } from './components/UserContext'
 import Header from './components/Header'
@@ -85,7 +86,7 @@ useEffect(
   },
   [currentQuestionIndex]
 );
-return (
+  return (
    <UserProvider value={{ name: userName, setName: setUserName }}>
       <Router>
         <Header />

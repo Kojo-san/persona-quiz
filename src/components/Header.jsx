@@ -4,11 +4,11 @@ export default function Header() {
     return (
         <header>
             <h1>Which Element Are You ?</h1>
-            <nav> 
+            <div> 
                 {/* mettre un div */}
-                <Link to="/">Home</Link>
-                <Link to="/quiz">Quiz</Link>
-            </nav>
+                <Link to="/">Home </Link>
+                <Link to="/quiz"> Quiz</Link>
+            </div>
         </header>
     );
 }
